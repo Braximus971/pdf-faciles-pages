@@ -3,362 +3,387 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <title>Attestation sur l’honneur – Modèle officiel à générer en PDF | PDF Facile</title>
-  <meta name="description" content="Générez une attestation sur l’honneur conforme aux usages administratifs français : claire, datée, signée. Aperçu avant validation, paiement unique, téléchargement immédiat." />
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <title>Attestation sur l'honneur : modèle officiel prêt à générer (PDF) | PDF Facile</title>
+  <meta name="description" content="Attestation sur l'honneur : modèle clair, daté et signé. Générez un PDF propre, prêt à imprimer et transmettre, conforme aux usages administratifs français." />
+
+  <!-- IMPORTANT : mets l'URL réelle de cette page GitHub ici -->
   <link rel="canonical" href="https://braximus971.github.io/pdf-faciles-pages/attestation-sur-l-honneur.html" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:site_name" content="PDF Facile" />
-  <meta property="og:title" content="Attestation sur l’honneur – Modèle officiel PDF" />
-  <meta property="og:description" content="Conforme aux usages administratifs français. Aperçu avant validation, paiement unique, téléchargement immédiat." />
-  <meta property="og:url" content="https://braximus971.github.io/pdf-faciles-pages/attestation-sur-l-honneur.html" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="Attestation sur l'honneur — modèle officiel prêt à générer en PDF" />
+  <meta property="og:description" content="Rédigez une attestation claire, datée et signée. Génération rapide, document propre, prêt à imprimer ou transmettre." />
 
   <style>
     :root{
-      --bg:#f6f8ff;
+      --bg:#f3f6ff;
       --card:#ffffff;
-      --text:#0b1220;
-      --muted:#55647a;
-      --line:rgba(15,23,42,.10);
-      --shadow:0 16px 44px rgba(11,18,32,.10);
-      --shadow2:0 10px 24px rgba(11,18,32,.08);
-      --blue:#1f5eff;
-      --blue2:#1147d9;
-      --green:#12b76a;
-      --radius:18px;
-      --radius2:14px;
-      --max:1120px;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e6ecff;
+      --blue:#1d4ed8;
+      --blue2:#2563eb;
+      --shadow:0 18px 50px rgba(2,6,23,.10);
+      --shadow2:0 10px 30px rgba(2,6,23,.08);
+      --radius:22px;
     }
-
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    html,body{height:100%}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       color:var(--text);
       background:
-        radial-gradient(900px 380px at 15% 0%, rgba(31,94,255,.16), transparent 60%),
-        radial-gradient(800px 380px at 85% 0%, rgba(18,183,106,.10), transparent 60%),
+        radial-gradient(1200px 600px at 50% -10%, #cfe0ff 0%, rgba(207,224,255,0) 60%),
+        radial-gradient(900px 500px at 70% 10%, #d8fff2 0%, rgba(216,255,242,0) 55%),
         var(--bg);
     }
-
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
 
-    /* Header */
-    .header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(246,248,255,.75);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid var(--line);
+    /* HEADER */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(160%) blur(10px);
+      background:rgba(243,246,255,.78);
+      border-bottom:1px solid rgba(230,236,255,.9);
     }
-    .header-inner{
-      display:flex;align-items:center;justify-content:space-between;
-      gap:12px;padding:12px 0;
+    .topbar .wrap{
+      max-width:1100px; margin:0 auto;
+      padding:12px 16px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
     }
     .brand{
-      display:flex;align-items:center;gap:10px;min-width:0;
+      display:flex; align-items:center; gap:10px;
+      min-width:0;
     }
     .logo{
-      width:38px;height:38px;border-radius:12px;
-      background:linear-gradient(135deg, rgba(31,94,255,.20), rgba(31,94,255,.06));
-      border:1px solid var(--line);
-      box-shadow:var(--shadow2);
-      display:grid;place-items:center;flex:0 0 auto;
+      width:44px; height:44px; border-radius:14px;
+      background:linear-gradient(145deg,#eaf0ff,#ffffff);
+      border:1px solid rgba(15,23,42,.10);
+      box-shadow:0 10px 25px rgba(2,6,23,.08);
+      display:grid; place-items:center;
+      flex:0 0 auto;
     }
-    .brand strong{font-size:16px;letter-spacing:.2px}
-    .brand span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
-    .nav{
-      display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;
+    .brand .t{
+      display:flex; flex-direction:column; line-height:1.1;
+      min-width:0;
     }
-    .link{
-      font-weight:700;font-size:14px;color:var(--muted);
-      padding:10px 12px;border-radius:999px;border:1px solid transparent;
+    .brand .name{
+      font-weight:800; letter-spacing:.2px;
+      font-size:18px;
       white-space:nowrap;
     }
-    .link:hover{border-color:var(--line);background:rgba(255,255,255,.7);color:var(--text)}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:11px 16px;border-radius:999px;
-      font-weight:900;font-size:14px;white-space:nowrap;
-      border:1px solid rgba(31,94,255,.22);
-      background:linear-gradient(135deg, var(--blue), var(--blue2));
-      color:#fff;
-      box-shadow:0 14px 30px rgba(31,94,255,.22);
-    }
-    .btn:active{transform:translateY(0)}
-    .btn:hover{filter:brightness(1.02);transform:translateY(-1px)}
-    .btn-outline{
-      background:rgba(255,255,255,.85);
-      color:var(--text);
-      border:1px solid var(--line);
-      box-shadow:var(--shadow2);
+    .brand .sub{
+      font-size:12px; color:var(--muted);
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      max-width:220px;
     }
 
-    /* Main layout */
-    main{padding:26px 0 34px}
-    .grid{
+    .nav{
+      display:flex; align-items:center; gap:10px;
+    }
+    .nav a{
+      font-weight:700;
+      font-size:14px;
+      padding:10px 12px;
+      border-radius:999px;
+      color:rgba(15,23,42,.78);
+    }
+    .nav a:hover{background:rgba(29,78,216,.08)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(15,23,42,.10);
+      background:rgba(255,255,255,.85);
+      box-shadow:0 10px 25px rgba(2,6,23,.06);
+      font-weight:800;
+      font-size:14px;
+      white-space:nowrap;
+    }
+    .btn-primary{
+      border:none;
+      background:linear-gradient(180deg,var(--blue2),var(--blue));
+      color:white;
+      box-shadow:0 14px 30px rgba(37,99,235,.25);
+    }
+
+    /* Mobile menu */
+    .burger{display:none}
+    @media (max-width: 720px){
+      .nav{display:none}
+      .burger{display:inline-flex}
+      .brand .sub{max-width:160px}
+    }
+    .drawer{
+      position:fixed; inset:0;
+      background:rgba(2,6,23,.35);
+      display:none;
+      z-index:60;
+    }
+    .drawer.open{display:block}
+    .panel{
+      position:absolute; right:12px; top:12px;
+      width:min(360px, calc(100% - 24px));
+      background:rgba(255,255,255,.96);
+      border:1px solid rgba(15,23,42,.10);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:12px;
+    }
+    .panel .row{display:flex; gap:10px; padding:6px}
+    .panel a{width:100%}
+    .panel .btn{width:100%}
+
+    /* LAYOUT */
+    .container{max-width:1100px; margin:0 auto; padding:26px 16px 90px;}
+    .hero{
       display:grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap:16px;
+      grid-template-columns: 1.1fr .9fr;
+      gap:22px;
       align-items:stretch;
+      margin-top:18px;
     }
     @media (max-width: 980px){
-      .grid{grid-template-columns:1fr}
+      .hero{grid-template-columns:1fr}
     }
-
     .card{
-      background:var(--card);
-      border:1px solid var(--line);
+      background:rgba(255,255,255,.82);
+      border:1px solid rgba(230,236,255,.9);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
       overflow:hidden;
     }
-
-    /* Hero */
-    .hero{
-      padding:22px;
-      background:
-        radial-gradient(900px 260px at 25% 0%, rgba(31,94,255,.14), transparent 60%),
-        radial-gradient(800px 260px at 75% 0%, rgba(18,183,106,.10), transparent 60%),
-        #fff;
-    }
-    .pill{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:10px 12px;border-radius:999px;
-      background:rgba(31,94,255,.08);
-      border:1px solid rgba(31,94,255,.14);
-      color:#123a91;font-weight:900;font-size:13px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:999px;background:var(--green);
-      box-shadow:0 0 0 4px rgba(18,183,106,.18);
+    .card-inner{padding:22px}
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(29,78,216,.08);
+      border:1px solid rgba(29,78,216,.14);
+      font-weight:800;
+      color:rgba(15,23,42,.85);
+      font-size:13px;
     }
     h1{
       margin:14px 0 10px;
-      font-size:38px;
+      font-weight:900;
+      letter-spacing:-.02em;
+      /* FIX: titre moins énorme + meilleur wrapping */
+      font-size:clamp(26px, 4.6vw, 44px);
       line-height:1.06;
-      letter-spacing:-.8px;
     }
     .lead{
       margin:0;
       color:var(--muted);
       font-size:16px;
-      line-height:1.6;
+      line-height:1.55;
       max-width:62ch;
     }
-    .chips{
+
+    .trust{
       margin-top:16px;
       display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
       gap:10px;
     }
-    @media (max-width: 720px){
-      h1{font-size:30px}
-      .chips{grid-template-columns:1fr}
-    }
-    .chip{
-      display:flex;gap:10px;align-items:flex-start;
-      padding:12px;
-      border-radius:var(--radius2);
-      background:rgba(255,255,255,.92);
-      border:1px solid var(--line);
+    .trust .item{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px 14px;
+      border-radius:16px;
+      background:rgba(255,255,255,.75);
+      border:1px solid rgba(15,23,42,.08);
       box-shadow:var(--shadow2);
     }
-    .chip b{display:block;font-size:13px}
-    .chip span{display:block;color:var(--muted);font-size:12px;line-height:1.45;margin-top:2px}
-    .icon{
-      width:22px;height:22px;border-radius:10px;
-      background:rgba(31,94,255,.10);
-      border:1px solid rgba(31,94,255,.14);
-      display:grid;place-items:center;flex:0 0 auto;
+    .dot{
+      width:26px;height:26px;border-radius:10px;
+      display:grid;place-items:center;
+      background:rgba(29,78,216,.10);
+      border:1px solid rgba(29,78,216,.15);
+      flex:0 0 auto;
     }
-    .icon svg{width:14px;height:14px;fill:var(--blue)}
+    .item b{display:block; font-size:14px}
+    .item span{display:block; color:var(--muted); font-size:13px; margin-top:2px}
 
-    .cta-row{
+    .cta{
       margin-top:16px;
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      align-items:center;
+      display:flex; gap:12px; flex-wrap:wrap;
     }
-    .note{
-      margin-top:10px;
-      font-size:12px;
-      color:var(--muted);
-      line-height:1.4;
-    }
+    .cta .btn{padding:14px 16px; border-radius:16px}
+    .cta .btn-primary{padding:16px 18px}
+    .fineprint{margin-top:10px; color:rgba(71,85,105,.95); font-size:13px}
 
-    /* Side */
-    .side{padding:18px}
-    .side-box{
-      border:1px solid var(--line);
-      border-radius:var(--radius2);
-      background:linear-gradient(180deg, rgba(31,94,255,.06), rgba(255,255,255,.92));
+    /* Right column */
+    .side{
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(230,236,255,.9);
+      border-radius:var(--radius);
       box-shadow:var(--shadow2);
-      padding:16px;
+      overflow:hidden;
     }
-    .side-title{margin:0 0 6px;font-weight:900}
-    .side-text{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
-    .steps{margin-top:12px;display:grid;gap:10px}
+    .side .head{
+      padding:18px 18px 10px;
+      border-bottom:1px solid rgba(230,236,255,.9);
+      background:linear-gradient(180deg, rgba(37,99,235,.06), rgba(255,255,255,.0));
+    }
+    .side h2{
+      margin:0;
+      font-size:16px;
+      font-weight:900;
+      letter-spacing:-.01em;
+    }
+    .side p{margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.5}
+    .steps{padding:14px 18px 18px; display:grid; gap:10px}
     .step{
-      display:flex;gap:12px;align-items:flex-start;
-      padding:12px;border-radius:var(--radius2);
-      background:#fff;border:1px solid var(--line);
+      display:flex; gap:12px;
+      padding:12px 12px;
+      border-radius:16px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(15,23,42,.08);
     }
     .num{
-      width:28px;height:28px;border-radius:10px;
+      width:30px;height:30px;border-radius:12px;
       display:grid;place-items:center;
-      background:rgba(31,94,255,.10);
-      border:1px solid rgba(31,94,255,.14);
-      color:#123a91;font-weight:900;flex:0 0 auto;
+      font-weight:900;
+      background:rgba(29,78,216,.10);
+      border:1px solid rgba(29,78,216,.15);
+      flex:0 0 auto;
     }
-    .step b{display:block;font-size:13px;margin-bottom:2px}
-    .step small{display:block;color:var(--muted);font-size:12px;line-height:1.45}
+    .step b{display:block; font-size:14px}
+    .step span{display:block; font-size:13px; color:var(--muted); margin-top:2px}
 
-    /* Sections */
-    .content{padding:0 22px 22px}
-    .section{
-      margin-top:16px;
-      padding-top:16px;
-      border-top:1px solid rgba(15,23,42,.08);
+    /* Content below */
+    .content{
+      margin-top:18px;
+      display:grid;
+      gap:14px;
     }
-    .section h2{
-      margin:0 0 8px;
-      font-size:20px;
-      letter-spacing:-.2px;
-    }
-    .section p{
-      margin:0 0 10px;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.65;
-    }
+    .content .card-inner{padding:18px 22px}
+    .content h2{margin:0 0 8px; font-size:18px; font-weight:900}
+    .content p{margin:0 0 10px; color:var(--muted); line-height:1.65}
+    .faq{display:grid; gap:10px; margin-top:10px}
     details{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:var(--radius2);
-      padding:14px;
-      box-shadow:var(--shadow2);
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:16px;
+      padding:12px 14px;
     }
-    details + details{margin-top:10px}
     summary{
       cursor:pointer;
       font-weight:900;
       list-style:none;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
     }
     summary::-webkit-details-marker{display:none}
+    details p{margin:8px 0 0; color:var(--muted); font-size:14px}
 
     /* Footer */
     footer{
       margin-top:18px;
-      color:var(--muted);
+      color:rgba(71,85,105,.9);
       font-size:12px;
+      text-align:center;
+      padding:18px 10px 0;
     }
-    footer a{color:var(--blue);font-weight:900}
   </style>
 
-  <!-- FAQ Schema (clean) -->
+  <!-- Schema FAQ (SEO) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"À quoi sert une attestation sur l’honneur ?",
-        "acceptedAnswer":{"@type":"Answer","text":"C’est une déclaration écrite par laquelle vous certifiez une information ou une situation dans le cadre d’un dossier ou d’une démarche."}
-      },
-      {
-        "@type":"Question",
-        "name":"Que doit contenir le document pour être valable ?",
-        "acceptedAnswer":{"@type":"Answer","text":"Une déclaration claire, vos informations, l’objet, le lieu, la date et votre signature. L’organisme demandeur peut imposer un format particulier."}
-      },
-      {
-        "@type":"Question",
-        "name":"Comment obtenir le PDF ?",
-        "acceptedAnswer":{"@type":"Answer","text":"Cliquez sur “Générer l’attestation en PDF”, complétez les champs, vérifiez l’aperçu puis téléchargez le document."}
-      }
+      {"@type":"Question","name":"L'attestation sur l'honneur est-elle valable ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à condition d'être rédigée clairement, datée et signée. Toute fausse déclaration peut engager votre responsabilité."}},
+      {"@type":"Question","name":"Combien de temps faut-il pour la générer ?","acceptedAnswer":{"@type":"Answer","text":"En quelques minutes : vous complétez, vous vérifiez l'aperçu, puis vous téléchargez le PDF."}},
+      {"@type":"Question","name":"Le paiement est-il récurrent ?","acceptedAnswer":{"@type":"Answer","text":"Non : paiement unique, sans abonnement."}}
     ]
   }
   </script>
 </head>
 
 <body>
-  <header class="header">
+  <!-- HEADER -->
+  <header class="topbar" role="banner">
     <div class="wrap">
-      <div class="header-inner">
-        <!-- IMPORTANT: tout renvoie vers pdf-facile.fr -->
-        <a class="brand" href="https://www.pdf-facile.fr/" rel="noopener">
-          <div class="logo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M6 2h9l3 3v17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1v3h3" fill="none" stroke="rgba(31,94,255,.0)"/>
-            </svg>
-            <svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px">
-              <path d="M7 3h8l2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm8 1v3h3" fill="none" stroke="#1f5eff" stroke-width="2"/>
-              <path d="M8 10h8M8 14h8M8 18h6" fill="none" stroke="#1f5eff" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <strong>PDF Facile</strong>
-            <span>Documents administratifs en PDF</span>
-          </div>
-        </a>
+      <a class="brand" href="https://www.pdf-facile.fr/" rel="noopener">
+        <div class="logo" aria-hidden="true">
+          <!-- simple icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="#1d4ed8" stroke-width="2"/>
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" stroke="#1d4ed8" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="t">
+          <div class="name">PDF Facile</div>
+          <div class="sub">Documents administratifs en PDF</div>
+        </div>
+      </a>
 
-        <nav class="nav" aria-label="Liens">
-          <a class="link" href="https://www.pdf-facile.fr/" rel="noopener">Accueil</a>
-          <a class="link" href="https://www.pdf-facile.fr/" rel="noopener">Tous les documents</a>
-          <a class="btn" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
-            Générer l’attestation
-          </a>
-        </nav>
-      </div>
+      <nav class="nav" aria-label="Navigation">
+        <a href="https://www.pdf-facile.fr/" rel="noopener">Accueil</a>
+        <a href="https://www.pdf-facile.fr/" rel="noopener">Tous les documents</a>
+        <a class="btn btn-primary" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
+          Générer l’attestation
+        </a>
+      </nav>
+
+      <a class="btn burger" href="#" id="openMenu" aria-label="Ouvrir le menu">Menu</a>
     </div>
   </header>
 
-  <main class="wrap">
-    <div class="grid">
-      <article class="card">
-        <div class="hero">
-          <div class="pill"><span class="dot" aria-hidden="true"></span> Conforme aux usages administratifs français</div>
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="panel" role="dialog" aria-label="Menu">
+      <div class="row">
+        <a class="btn" href="https://www.pdf-facile.fr/" rel="noopener">Accueil</a>
+      </div>
+      <div class="row">
+        <a class="btn" href="https://www.pdf-facile.fr/" rel="noopener">Tous les documents</a>
+      </div>
+      <div class="row">
+        <a class="btn btn-primary" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
+          Générer l’attestation
+        </a>
+      </div>
+      <div class="row">
+        <a class="btn" href="#" id="closeMenu">Fermer</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Attestation sur l'honneur">
+      <div class="card">
+        <div class="card-inner">
+          <div class="badge">Conforme aux usages administratifs français</div>
 
           <h1>Attestation sur l’honneur — modèle officiel prêt à générer en PDF</h1>
+
           <p class="lead">
-            Rédigez une attestation claire, datée et signée pour vos démarches. Document propre, présentation administrative,
-            prêt à imprimer ou transmettre.
+            Rédigez une attestation claire, datée et signée pour vos démarches.
+            Document propre, présentation administrative, prêt à imprimer ou transmettre.
           </p>
 
-          <div class="chips" aria-label="Réassurance">
-            <div class="chip">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4zm-1 13l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 4z"/></svg>
-              </div>
+          <div class="trust" aria-label="Éléments de réassurance">
+            <div class="item">
+              <div class="dot" aria-hidden="true">✓</div>
               <div>
-                <b>Paiement unique • Sans abonnement</b>
+                <b>Paiement unique · Sans abonnement</b>
                 <span>Une seule fois. Aucun prélèvement récurrent.</span>
               </div>
             </div>
-            <div class="chip">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 8a1 1 0 0 1 1 1v3.6l2.2 1.3a1 1 0 1 1-1 1.7l-2.7-1.6A1 1 0 0 1 11 14V9a1 1 0 0 1 1-1zm0-6a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/></svg>
-              </div>
+            <div class="item">
+              <div class="dot" aria-hidden="true">⏱</div>
               <div>
                 <b>Rapide et simple</b>
                 <span>Compléter → vérifier → télécharger.</span>
               </div>
             </div>
-            <div class="chip">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2l4 4h-3v7h-2V6H8l4-4zm-7 14h14v2H5v-2zm2 4h10v2H7v-2z"/></svg>
-              </div>
+            <div class="item">
+              <div class="dot" aria-hidden="true">⬇</div>
               <div>
                 <b>Téléchargement immédiat</b>
                 <span>PDF prêt à signer et transmettre.</span>
@@ -366,107 +391,109 @@
             </div>
           </div>
 
-          <div class="cta-row">
-            <a class="btn" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
+          <div class="cta">
+            <a class="btn btn-primary" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
               Générer l’attestation sur l’honneur en PDF
             </a>
-            <a class="btn btn-outline" href="https://www.pdf-facile.fr/" rel="noopener">
+            <a class="btn" href="https://www.pdf-facile.fr/" rel="noopener">
               Retour au site PDF Facile
             </a>
           </div>
 
-          <div class="note">
-            Conseil : relisez et signez avant transmission. Vous restez responsable des informations déclarées.
+          <div class="fineprint">
+            Conseil : relisez et signez avant transmission. Toute fausse déclaration peut engager votre responsabilité.
           </div>
         </div>
+      </div>
 
-        <div class="content">
-          <section class="section">
-            <h2>À quoi sert une attestation sur l’honneur ?</h2>
-            <p>
-              Une attestation sur l’honneur est une déclaration écrite par laquelle vous certifiez une information ou une situation.
-              Elle est souvent demandée par une administration, un employeur, une école ou un organisme.
-            </p>
-            <p>
-              Ce modèle est conçu pour être lisible, clair, et conforme aux usages administratifs français (objet précis, lieu, date, signature).
-            </p>
-          </section>
-
-          <section class="section">
-            <h2>FAQ</h2>
-
-            <details open>
-              <summary>Le document est-il “officiel” ?</summary>
-              <p>
-                Il respecte les usages administratifs (formulation claire, daté, signé). L’acceptation finale dépend de l’organisme demandeur.
-              </p>
-            </details>
-
-            <details>
-              <summary>Qu’est-ce qui rend le document valable ?</summary>
-              <p>
-                Une déclaration sans ambiguïté, vos informations, l’objet, le lieu, la date et la signature. Évitez les formulations vagues.
-              </p>
-            </details>
-
-            <details>
-              <summary>Comment récupérer le PDF ?</summary>
-              <p>
-                Cliquez sur “Générer”, complétez les champs, vérifiez l’aperçu, puis téléchargez le document prêt à imprimer ou transmettre.
-              </p>
-            </details>
-          </section>
-
-          <footer>
-            Page informative à vocation administrative. Accès au formulaire via
-            <a href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">PDF Facile</a>.
-          </footer>
+      <aside class="side" aria-label="Résumé">
+        <div class="head">
+          <h2>Comment ça marche</h2>
+          <p>3 étapes simples pour obtenir un document propre, prêt à l’emploi.</p>
         </div>
-      </article>
-
-      <aside class="card side">
-        <div class="side-box">
-          <p class="side-title">Procédure (3 étapes)</p>
-          <p class="side-text">Même si vous êtes pressé, faites simple : précision + date + signature.</p>
-
-          <div class="steps">
-            <div class="step">
-              <div class="num">1</div>
-              <div>
-                <b>Renseigner vos informations</b>
-                <small>Identité, objet de la déclaration, lieu.</small>
-              </div>
-            </div>
-            <div class="step">
-              <div class="num">2</div>
-              <div>
-                <b>Vérifier l’aperçu</b>
-                <small>Orthographe, cohérence, formulation.</small>
-              </div>
-            </div>
-            <div class="step">
-              <div class="num">3</div>
-              <div>
-                <b>Télécharger le PDF</b>
-                <small>Document prêt à signer et transmettre.</small>
-              </div>
-            </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div><b>Renseignez vos informations</b><span>Nom, date, contenu de la déclaration.</span></div>
           </div>
-        </div>
-
-        <div style="margin-top:12px;padding:16px;border-radius:14px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow2)">
-          <b style="display:block;margin-bottom:6px">Besoin d’aller vite ?</b>
-          <div style="color:var(--muted);font-size:13px;line-height:1.55">
-            Cliquez sur le bouton “Générer l’attestation” : vous complétez, vérifiez, et récupérez le PDF immédiatement.
+          <div class="step">
+            <div class="num">2</div>
+            <div><b>Vérifiez l’aperçu</b><span>Contrôlez la mise en forme avant validation.</span></div>
           </div>
-          <div style="margin-top:12px">
-            <a class="btn" href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener" style="width:100%;justify-content:center">
-              Accéder au formulaire
-            </a>
+          <div class="step">
+            <div class="num">3</div>
+            <div><b>Téléchargez le PDF</b><span>Document prêt à imprimer ou transmettre.</span></div>
           </div>
+          <a class="btn btn-primary" style="margin-top:4px"
+             href="https://www.pdf-facile.fr/document/attestation-honneur" rel="noopener">
+            Accéder au formulaire
+          </a>
         </div>
       </aside>
-    </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content">
+      <div class="card">
+        <div class="card-inner">
+          <h2>À quoi sert une attestation sur l’honneur ?</h2>
+          <p>
+            L’attestation sur l’honneur est un document administratif permettant de déclarer une situation ou certifier une information.
+            Elle est fréquemment demandée pour des démarches courantes (administrations, organismes, établissements).
+          </p>
+          <h2>Conditions de validité</h2>
+          <p>
+            Pour être recevable, le document doit être rédigé clairement, daté et signé. Conservez une copie et fournissez-la uniquement
+            à un organisme qui la demande dans le cadre de votre démarche.
+          </p>
+
+          <div class="faq" id="faq">
+            <h2>Questions fréquentes</h2>
+
+            <details>
+              <summary>L’attestation sur l’honneur est-elle valable ?</summary>
+              <p>Oui, si elle est claire, datée et signée. Toute fausse déclaration peut engager votre responsabilité.</p>
+            </details>
+
+            <details>
+              <summary>Combien de temps faut-il pour la générer ?</summary>
+              <p>Quelques minutes : vous complétez, vérifiez l’aperçu, puis téléchargez le PDF.</p>
+            </details>
+
+            <details>
+              <summary>Le paiement est-il récurrent ?</summary>
+              <p>Non. Paiement unique, sans abonnement.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Page d’information. Génération du document via le service PDF Facile.
+      </footer>
+    </section>
   </main>
+
+  <script>
+    // Mobile menu
+    const drawer = document.getElementById('drawer');
+    const openMenu = document.getElementById('openMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function openDrawer(e){
+      e && e.preventDefault();
+      drawer.classList.add('open');
+      drawer.setAttribute('aria-hidden','false');
+    }
+    function closeDrawer(e){
+      e && e.preventDefault();
+      drawer.classList.remove('open');
+      drawer.setAttribute('aria-hidden','true');
+    }
+
+    openMenu && openMenu.addEventListener('click', openDrawer);
+    closeMenu && closeMenu.addEventListener('click', closeDrawer);
+    drawer && drawer.addEventListener('click', (e)=>{ if(e.target === drawer) closeDrawer(); });
+  </script>
 </body>
 </html>
