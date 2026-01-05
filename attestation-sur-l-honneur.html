@@ -2,18 +2,20 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Attestation sur l’honneur : définition, usage et génération du document</title>
-<meta name="description" content="L’attestation sur l’honneur est un document administratif utilisé pour de nombreuses démarches. Découvrez son usage et générez votre attestation conforme en ligne.">
+<title>Attestation sur l’honneur – Fiche administrative et génération du document</title>
+<meta name="description" content="Fiche administrative : attestation sur l’honneur. Comprendre l’usage du document et générer une attestation conforme aux usages administratifs français.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://TON-DOMAINE-GITHUB/attestation-sur-l-honneur.html">
 
 <style>
 :root{
-  --blue:#003a8f;
-  --dark:#1c1c1c;
-  --gray:#555;
-  --border:#dcdcdc;
-  --bg:#f5f5f5;
+  --blue:#0b2e83;
+  --red:#b00020;
+  --ink:#1b1f23;
+  --muted:#4a5568;
+  --border:#d9dee5;
+  --bg:#f4f6f9;
+  --card:#ffffff;
 }
 
 *{box-sizing:border-box}
@@ -22,179 +24,209 @@ body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
   background:var(--bg);
-  color:var(--dark);
-  line-height:1.6;
+  color:var(--ink);
+  line-height:1.65;
 }
 
-/* HEADER TYPE SERVICE PUBLIC */
+/* Bandeau tricolore institutionnel */
+.tricolor{
+  height:8px;
+  background:linear-gradient(
+    90deg,
+    var(--blue) 0 33.33%,
+    #ffffff 33.33% 66.66%,
+    var(--red) 66.66% 100%
+  );
+}
+
+/* En-tête institutionnel */
 .header{
   background:#ffffff;
-  border-bottom:4px solid var(--blue);
+  border-bottom:2px solid var(--border);
 }
-
 .header-inner{
   max-width:1200px;
   margin:auto;
-  padding:20px;
+  padding:22px 20px;
 }
-
-.header-title{
-  font-size:1.9rem;
+.header-kicker{
+  font-size:0.9rem;
   font-weight:700;
+  color:var(--blue);
+  text-transform:uppercase;
+  letter-spacing:0.04em;
 }
-
+.header-title{
+  font-size:2.2rem;
+  font-weight:800;
+  margin:10px 0 6px;
+}
 .header-subtitle{
-  margin-top:6px;
-  color:var(--gray);
-  font-size:1rem;
+  font-size:1.05rem;
+  color:var(--muted);
+  max-width:950px;
 }
 
-/* MAIN */
+/* Contenu */
 .main{
   max-width:1200px;
   margin:auto;
-  padding:30px 20px;
+  padding:30px 20px 70px;
 }
 
-.block{
-  background:#ffffff;
+.section{
+  background:var(--card);
   border:1px solid var(--border);
-  padding:28px;
-  margin-bottom:24px;
+  padding:30px;
+  margin-top:22px;
 }
 
-.block h2{
+.section h2{
   margin-top:0;
-  font-size:1.4rem;
+  font-size:1.5rem;
+  padding-left:14px;
   border-left:6px solid var(--blue);
-  padding-left:12px;
 }
 
-/* LISTES */
+/* Encadrés */
+.info{
+  background:#eef3ff;
+  border:1px solid #c7d7ff;
+}
+.warning{
+  background:#fff2f2;
+  border:1px solid #f5b5b5;
+}
+
+/* Listes */
 ul{
-  padding-left:20px;
+  padding-left:22px;
 }
-
 li{
   margin-bottom:8px;
 }
 
-/* INFO */
-.info{
-  background:#f0f6ff;
-  border:1px solid #c7dcff;
-  padding:20px;
+/* Grille de points clés */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+  margin-top:18px;
 }
-
-/* WARNING */
-.warning{
-  background:#fff4e5;
-  border:1px solid #ffd59e;
-  padding:20px;
-  font-size:0.95rem;
-}
-
-/* CTA SOBER */
-.cta{
+.card{
+  border:1px solid var(--border);
+  padding:18px;
   background:#ffffff;
+  font-weight:700;
+}
+
+/* Bloc accès service */
+.access{
+  background:#f9fbff;
   border:2px solid var(--blue);
-  padding:24px;
+  padding:32px;
   text-align:center;
 }
-
-.cta p{
-  margin-bottom:16px;
+.access p{
+  font-size:1.05rem;
+  margin-bottom:20px;
 }
-
-.cta a{
+.access a{
   display:inline-block;
   background:var(--blue);
   color:#ffffff;
-  padding:14px 28px;
-  font-weight:700;
+  padding:14px 30px;
+  font-size:1.05rem;
+  font-weight:800;
   text-decoration:none;
 }
 
-/* FOOTER */
+/* Pied de page */
 .footer{
   background:#ffffff;
-  border-top:1px solid var(--border);
+  border-top:2px solid var(--border);
+  padding:24px;
   text-align:center;
-  padding:20px;
   font-size:0.9rem;
-  color:var(--gray);
+  color:var(--muted);
 }
 </style>
 </head>
 
 <body>
 
+<div class="tricolor"></div>
+
 <header class="header">
   <div class="header-inner">
+    <div class="header-kicker">Fiche administrative</div>
     <div class="header-title">Attestation sur l’honneur</div>
     <div class="header-subtitle">
-      Fiche pratique – document administratif
+      Document utilisé dans de nombreuses démarches administratives pour déclarer une situation
+      ou certifier l’exactitude d’une information.
     </div>
   </div>
 </header>
 
 <main class="main">
 
-  <section class="block">
-    <h2>Qu’est-ce qu’une attestation sur l’honneur ?</h2>
+  <section class="section">
+    <h2>Définition</h2>
     <p>
-      L’attestation sur l’honneur est un document par lequel une personne certifie
-      l’exactitude d’une information la concernant. Elle est fréquemment demandée
-      dans le cadre de démarches administratives, sociales ou professionnelles.
+      L’attestation sur l’honneur est un document par lequel une personne affirme
+      la véracité d’une information la concernant. Elle est couramment demandée
+      par les administrations, organismes publics ou parapublics lorsque
+      aucun justificatif officiel ne peut être fourni immédiatement.
     </p>
-    <p>
-      Ce document est utilisé lorsqu’aucun justificatif officiel ne peut être fourni
-      immédiatement ou lorsque l’administration accepte une déclaration personnelle.
-    </p>
+
+    <div class="grid">
+      <div class="card">Usage administratif courant</div>
+      <div class="card">Déclaration personnelle engageante</div>
+      <div class="card">Document écrit et signé</div>
+    </div>
   </section>
 
-  <section class="block">
+  <section class="section">
     <h2>Dans quels cas utiliser une attestation sur l’honneur ?</h2>
     <ul>
       <li>Démarches auprès d’une administration publique</li>
       <li>Déclaration de situation personnelle</li>
       <li>Justificatif administratif ponctuel</li>
-      <li>Procédure sociale ou scolaire</li>
+      <li>Procédure sociale, scolaire ou professionnelle</li>
       <li>Formalités courantes pour particuliers</li>
     </ul>
   </section>
 
-  <section class="block info">
-    <h2>Contenu du document</h2>
-    <p>Une attestation sur l’honneur comporte généralement :</p>
+  <section class="section info">
+    <h2>Contenu habituel du document</h2>
     <ul>
-      <li>L’identité du déclarant</li>
-      <li>L’objet de la déclaration</li>
-      <li>La mention « Fait pour servir et valoir ce que de droit »</li>
-      <li>La date et la signature</li>
+      <li>Identité complète du déclarant</li>
+      <li>Objet précis de la déclaration</li>
+      <li>Mention de responsabilité sur l’honneur</li>
+      <li>Date, lieu et signature</li>
     </ul>
   </section>
 
-  <section class="block">
-    <h2>Générer une attestation sur l’honneur en ligne</h2>
+  <section class="section">
+    <h2>Générer une attestation sur l’honneur</h2>
     <p>
-      Vous pouvez générer une attestation sur l’honneur conforme aux usages
+      Il est possible de générer une attestation sur l’honneur conforme aux usages
       administratifs à l’aide d’un service en ligne dédié.
-    </p>
-    <p>
-      Le document est généré automatiquement à partir des informations renseignées
-      et peut être utilisé immédiatement pour vos démarches.
+      Le document est produit automatiquement à partir des informations renseignées
+      et peut être utilisé immédiatement.
     </p>
   </section>
 
-  <section class="block warning">
-    ⚠️ Une attestation sur l’honneur engage la responsabilité de son auteur.
+  <section class="section warning">
+    <strong>Attention :</strong><br>
+    Une attestation sur l’honneur engage la responsabilité de son auteur.
     Toute fausse déclaration peut entraîner des sanctions prévues par la législation française.
   </section>
 
-  <section class="block cta">
+  <section class="section access">
     <p>
-      Accéder au service en ligne pour générer une attestation sur l’honneur conforme.
+      Accéder au service en ligne pour générer une attestation sur l’honneur
+      conforme aux usages administratifs.
     </p>
     <a href="https://www.pdf-facile.fr/document/attestation-honneur">
       Accéder au formulaire
@@ -204,7 +236,7 @@ li{
 </main>
 
 <footer class="footer">
-  Service en ligne d’aide à la génération de documents administratifs – France
+  Plateforme de génération de documents administratifs – France
 </footer>
 
 </body>
