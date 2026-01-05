@@ -1,129 +1,176 @@
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-card">
-    <span class="badge">
-      Conforme aux usages administratifs français
-    </span>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <h1 class="hero-title">
-      Attestation sur l'honneur – modèle officiel prêt à générer en PDF
-    </h1>
+  <!-- SEO -->
+  <title>Attestation sur l'honneur : modèle officiel à générer en PDF | PDF Facile</title>
+  <meta name="description" content="Créez une attestation sur l'honneur claire, datée et signée. Modèle conforme aux usages administratifs français. Génération simple et rapide via PDF Facile." />
+  <link rel="canonical" href="https://braximus971.github.io/pdf-faciles-pages/attestation-sur-l-honneur.html" />
 
-    <p class="hero-subtitle">
-      Rédigez une attestation claire, datée et signée pour vos démarches administratives.
-    </p>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Attestation sur l'honneur : modèle officiel à générer en PDF" />
+  <meta property="og:description" content="Modèle conforme aux usages administratifs français. Génération simple et rapide via PDF Facile." />
 
-    <ul class="hero-features">
-      <li>✔ Paiement unique – sans abonnement</li>
-      <li>⏱ Rapide et simple : compléter → vérifier → télécharger</li>
-      <li>⬇ Téléchargement immédiat du PDF</li>
-    </ul>
+  <style>
+    :root{
+      --bg1:#eaf1ff;
+      --bg2:#f7fbff;
+      --card:#ffffffcc;
+      --card2:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --blue:#1d4ed8;
+      --blue2:#2563eb;
+      --blue3:#0b3aa6;
+      --shadow: 0 18px 55px rgba(2, 28, 74, .18);
+      --shadow2: 0 10px 30px rgba(2, 28, 74, .12);
+      --radius: 18px;
+      --radius2: 14px;
+      --max: 980px;
+      --focus: 0 0 0 4px rgba(37, 99, 235, .18);
+    }
 
-    <a
-      href="https://www.pdf-facile.fr/document/attestation-honneur"
-      class="cta-primary"
-    >
-      Générer l'attestation sur l'honneur en PDF
-    </a>
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 600px at 20% -10%, rgba(59,130,246,.25), transparent 60%),
+        radial-gradient(900px 550px at 90% 0%, rgba(99,102,241,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+    }
 
-    <a
-      href="https://www.pdf-facile.fr"
-      class="cta-secondary"
-    >
-      Retour au site PDF Facile
-    </a>
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:18px 16px 48px;}
 
-    <p class="hero-note">
-      Conseil : relisez et signez avant transmission. Toute fausse déclaration engage votre responsabilité.
-    </p>
-  </div>
-</section>
+    .hero{
+      margin-top:20px;
+      background:rgba(255,255,255,.55);
+      border:1px solid rgba(226,232,240,.85);
+      border-radius:26px;
+      box-shadow:var(--shadow);
+    }
 
-<style>
-.hero {
-  padding: 32px 16px;
-  background: linear-gradient(180deg, #eef3ff, #f7f9ff);
-}
+    .hero-inner{padding:28px 20px}
 
-.hero-card {
-  max-width: 720px;
-  margin: 0 auto;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 28px 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
+    .pill{
+      display:inline-flex;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(37,99,235,.10);
+      border:1px solid rgba(37,99,235,.18);
+      font-weight:900;
+      font-size:13px;
+    }
 
-.badge {
-  display: inline-block;
-  padding: 8px 14px;
-  background: #eef2ff;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
+    .h1{
+      margin:16px 0 10px;
+      font-size:clamp(26px,3.8vw,44px);
+      line-height:1.06;
+      font-weight:950;
+      text-align:center;
+    }
 
-.hero-title {
-  font-size: 28px;
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
+    .lead{
+      text-align:center;
+      max-width:60ch;
+      margin:0 auto;
+      color:var(--muted);
+      font-size:16px;
+    }
 
-.hero-subtitle {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:16px;
+      margin-top:20px;
+    }
 
-.hero-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 24px 0;
-}
+    .card{
+      background:#fff;
+      border:1px solid rgba(226,232,240,.95);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow2);
+    }
 
-.hero-features li {
-  background: #f4f6fb;
-  border-radius: 12px;
-  padding: 12px 14px;
-  margin-bottom: 10px;
-  font-size: 15px;
-}
+    .btn{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-radius:16px;
+      font-weight:900;
+      padding:16px 18px;
+    }
 
-.cta-primary {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 16px;
-  border-radius: 14px;
-  background: linear-gradient(180deg, #2f6bff, #1f55e0);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-bottom: 14px;
+    .btn-primary{
+      background:linear-gradient(180deg,var(--blue2),var(--blue));
+      color:#fff;
+      box-shadow:0 16px 35px rgba(29,78,216,.28);
+    }
 
-  /* ✅ SEULE MODIFICATION */
-  white-space: nowrap;
-}
+    /* ✅ SEULE MODIFICATION DEMANDÉE */
+    .btn-primary.btn-big{
+      white-space: nowrap;
+    }
 
-.cta-secondary {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 14px;
-  border-radius: 14px;
-  background: #ffffff;
-  border: 1px solid #dbe1f0;
-  color: #111;
-  font-weight: 600;
-  text-decoration: none;
-  margin-bottom: 16px;
-}
+    .btn-secondary{
+      margin-top:10px;
+      text-align:center;
+      padding:14px;
+      border-radius:16px;
+      background:#fff;
+      border:1px solid rgba(226,232,240,.95);
+      font-weight:900;
+    }
 
-.hero-note {
-  font-size: 13px;
-  color: #666;
-  text-align: center;
-}
-</style>
+    @media(max-width:860px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-inner">
+        <div style="text-align:center">
+          <div class="pill">Conforme aux usages administratifs français</div>
+        </div>
+
+        <h1 class="h1">Attestation sur l'honneur : modèle officiel prêt à générer en PDF</h1>
+
+        <p class="lead">
+          Rédigez une attestation claire, datée et signée pour vos démarches administratives.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <p>
+              L’attestation sur l’honneur est une déclaration écrite utilisée pour certifier une situation
+              lorsqu’aucun justificatif immédiat n’est requis.
+            </p>
+          </article>
+
+          <aside class="card">
+            <a class="btn btn-primary btn-big"
+               href="https://www.pdf-facile.fr/document/attestation-honneur">
+              Générer l’attestation sur l’honneur en PDF
+            </a>
+
+            <a class="btn-secondary" href="https://www.pdf-facile.fr/">
+              Retour au site PDF Facile
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
