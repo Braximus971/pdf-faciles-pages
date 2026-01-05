@@ -1,188 +1,228 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Attestation sur l’honneur officielle – Génération conforme en ligne</title>
-  <meta name="description" content="Générez une attestation sur l’honneur conforme aux usages administratifs français. Document clair, structuré et immédiatement utilisable pour vos démarches officielles.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Attestation sur l’honneur officielle | Génération conforme en ligne</title>
+<meta name="description" content="Service en ligne officiel pour générer une attestation sur l’honneur conforme aux usages administratifs français. Document clair, sécurisé et immédiatement utilisable.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="canonical" href="https://TON-DOMAINE-GITHUB/attestation-sur-l-honneur.html">
+<link rel="canonical" href="https://TON-DOMAINE-GITHUB/attestation-sur-l-honneur.html">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background-color: #f1f3f6;
-      color: #1f2933;
-      line-height: 1.7;
-    }
+<style>
+:root {
+  --blue: #1d4ed8;
+  --dark: #0f172a;
+  --gray: #475569;
+  --bg: #f4f6f9;
+}
 
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
+* { box-sizing: border-box; }
 
-    .panel {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 48px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.7;
+}
 
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+  padding: 80px 20px;
+}
 
-    .subtitle {
-      font-size: 1.15rem;
-      color: #4b5563;
-      margin-bottom: 32px;
-    }
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
 
-    .trust-box {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin: 32px 0;
-    }
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
 
-    .trust-item {
-      flex: 1;
-      min-width: 220px;
-      background: #f8fafc;
-      border-left: 4px solid #2563eb;
-      padding: 16px 20px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
+.hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
 
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 48px;
-      margin-bottom: 16px;
-    }
+.hero img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.cta-primary {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 18px 34px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 15px 30px rgba(37,99,235,0.45);
+}
 
-    li {
-      margin-bottom: 10px;
-    }
+/* SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
 
-    .steps {
-      margin-top: 24px;
-    }
+.section h2 {
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+}
 
-    .step {
-      margin-bottom: 16px;
-    }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 24px;
+}
 
-    .cta {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 18px 32px;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #ffffff;
-      background: linear-gradient(135deg, #1d4ed8, #2563eb);
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 10px 24px rgba(37,99,235,0.35);
-      transition: transform 0.2s ease;
-    }
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
 
-    .cta:hover {
-      transform: translateY(-2px);
-    }
+.card strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
 
-    .legal {
-      margin-top: 40px;
-      font-size: 0.95rem;
-      color: #374151;
-      background: #f9fafb;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #e5e7eb;
-    }
+/* PROCESS */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 24px;
+}
 
-    footer {
-      margin-top: 48px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-  </style>
+.step {
+  background: #fff;
+  padding: 26px;
+  border-radius: 14px;
+  border-left: 6px solid var(--blue);
+}
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "GovernmentService",
-    "name": "Génération d’attestation sur l’honneur",
-    "areaServed": "FR",
-    "audience": {
-      "@type": "Audience",
-      "audienceType": "Particuliers"
-    },
-    "inLanguage": "fr-FR"
-  }
-  </script>
+/* LEGAL */
+.legal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+}
+
+/* CTA FINAL */
+.final-cta {
+  text-align: center;
+  background: #fff;
+  padding: 70px 20px;
+  margin-top: 80px;
+}
+
+.final-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+</style>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="panel">
 
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+    <div>
       <h1>Attestation sur l’honneur officielle</h1>
-      <p class="subtitle">
-        Générez un document conforme aux usages administratifs français, clair, structuré et immédiatement utilisable.
-      </p>
-
-      <div class="trust-box">
-        <div class="trust-item">✔ Conforme aux démarches administratives françaises</div>
-        <div class="trust-item">✔ Document rédigé de manière claire et responsable</div>
-        <div class="trust-item">✔ Génération immédiate, sans inscription</div>
-      </div>
-
       <p>
-        L’attestation sur l’honneur est un document par lequel une personne certifie l’exactitude d’une information
-        la concernant. Elle est fréquemment exigée par les administrations et organismes français
-        dans le cadre de démarches officielles.
+        Service en ligne sécurisé permettant de générer une attestation sur l’honneur
+        conforme aux usages administratifs français, immédiatement utilisable pour vos démarches.
       </p>
-
-      <h2>Dans quels cas utiliser une attestation sur l’honneur ?</h2>
-      <ul>
-        <li>Démarches administratives auprès d’organismes publics</li>
-        <li>Déclarations personnelles sur situation ou engagement</li>
-        <li>Justificatifs demandés par une administration</li>
-        <li>Situations déclaratives exceptionnelles</li>
-        <li>Formalités courantes pour particuliers</li>
-      </ul>
-
-      <h2>Comment générer votre document</h2>
-      <div class="steps">
-        <div class="step">1. Complétez les informations demandées dans le formulaire</div>
-        <div class="step">2. Vérifiez le contenu généré automatiquement</div>
-        <div class="step">3. Téléchargez votre attestation prête à l’emploi</div>
-      </div>
-
-      <div class="legal">
-        ⚠️ Une attestation sur l’honneur engage la responsabilité de son auteur.
-        Toute fausse déclaration peut entraîner des conséquences légales conformément au droit français.
-      </div>
-
-      <a class="cta" href="https://www.pdf-facile.fr/document/attestation-honneur">
-        Accéder au formulaire officiel
+      <a class="cta-primary" href="https://www.pdf-facile.fr/document/attestation-honneur">
+        Générer mon attestation officielle
       </a>
-
     </div>
-
-    <footer>
-      Service en ligne destiné aux particuliers – Utilisation en France
-    </footer>
+    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=900&q=80" alt="Document administratif officiel">
   </div>
+</section>
+
+<!-- RÉASSURANCE -->
+<section class="section">
+  <div class="cards">
+    <div class="card">
+      <strong>Conformité administrative</strong>
+      Document rédigé selon les usages et attentes des administrations françaises.
+    </div>
+    <div class="card">
+      <strong>Responsabilité juridique</strong>
+      Texte clair, structuré, engageant la responsabilité du déclarant.
+    </div>
+    <div class="card">
+      <strong>Génération immédiate</strong>
+      Aucun modèle complexe, aucun logiciel, aucun délai.
+    </div>
+  </div>
+</section>
+
+<!-- UTILISATIONS -->
+<section class="section">
+  <h2>À quoi sert une attestation sur l’honneur ?</h2>
+  <div class="cards">
+    <div class="card">Démarches auprès des administrations publiques</div>
+    <div class="card">Déclarations personnelles ou engagements écrits</div>
+    <div class="card">Justificatifs exigés par un organisme officiel</div>
+    <div class="card">Situations déclaratives exceptionnelles</div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <h2>Comment obtenir votre document</h2>
+  <div class="steps">
+    <div class="step">1. Renseignez vos informations dans le formulaire sécurisé</div>
+    <div class="step">2. Le document est généré automatiquement</div>
+    <div class="step">3. Téléchargez votre attestation prête à l’emploi</div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section class="section">
+  <div class="legal">
+    ⚠️ Une attestation sur l’honneur engage la responsabilité de son auteur.
+    Toute fausse déclaration peut entraîner des sanctions prévues par la législation française.
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <h2>Accéder au service officiel</h2>
+  <a class="cta-primary" href="https://www.pdf-facile.fr/document/attestation-honneur">
+    Accéder au formulaire
+  </a>
+</section>
+
+<footer>
+  Service en ligne destiné aux particuliers – France
+</footer>
+
 </body>
 </html>
